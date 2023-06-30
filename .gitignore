@@ -1,0 +1,3 @@
+# ignore dotenv
+.env
+*.txt
