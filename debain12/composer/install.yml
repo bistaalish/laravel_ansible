@@ -1,5 +1,5 @@
 ---
-- name: Install php
+- name: Install Composer
   hosts: "{{ host }}"
   remote_user: "{{user}}"
   become: yes
