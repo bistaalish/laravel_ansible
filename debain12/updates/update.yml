@@ -1,5 +1,5 @@
 ---
-- name: Install requirements
+- name: Updating the system
   hosts: "{{ host }}"
   remote_user: "{{user}}"
   become: yes
