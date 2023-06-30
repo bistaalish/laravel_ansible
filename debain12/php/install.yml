@@ -25,7 +25,7 @@
           - php-soap
           - php-zip
           - php-intl
-          - mysql-server
+          - default-mysql-server
     
    - name: enabling apache2 at startup
      ansible.builtin.systemd:
