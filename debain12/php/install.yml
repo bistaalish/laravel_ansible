@@ -1,0 +1,35 @@
+---
+- name: Install php
+  hosts: "{{ host }}"
+  remote_user: "{{user}}"
+  become: yes
+  gather_facts: no
+  tasks:
+   - name: installing LAMP Stack in Debain12
+     ansible.builtin.apt:
+       state: present
+       pkg:
+          - apache2
+          - php-common
+          - php-mysql
+          - php-xml
+          - php-xmlrpc
+          - php-curl
+          - php-gd
+          - php-imagick
+          - php-cli
+          - php-dev
+          - php-imap
+          - php-mbstring
+          - php-opcache
+          - php-soap
+          - php-zip
+          - php-intl
+          - mysql-server
+    
+   - name: enabling apache2 at startup
+     ansible.builtin.systemd:
+       name: apache2
+       state: started
+       enabled: yes
+
