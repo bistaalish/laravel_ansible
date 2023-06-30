@@ -5,7 +5,7 @@
   become: yes
   gather_facts: no
   tasks:
-   - name: installing LAMP Stack in Debain12
+   - name: installing LAMP Stack in apache2
      ansible.builtin.apt:
        state: present
        pkg:

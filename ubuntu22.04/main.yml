@@ -1,4 +1,4 @@
 ---
 - import_playbook: ./updates/update.yml
-# - import_playbook: ./php/install.yml
-# - import_playbook: ./composer/install.yml
+- import_playbook: ./php/install.yml
+- import_playbook: ./composer/install.yml
